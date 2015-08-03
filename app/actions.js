@@ -13,3 +13,7 @@ export var Chat = Actions.create([
 	"send", // (room, message): Send a chat message to a room
 	"fetch" // (): Fetch all chat data
 ]);
+
+export var Images = Actions.create([
+	"update" // (n,m)
+])
