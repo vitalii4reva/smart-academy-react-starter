@@ -1,5 +1,7 @@
 import React from "react";
 import ImageEl from "elements/ImageEl";
+import Sidebar from  "components/Sidebar.jsx"
+import Gallery from "components/Gallery.jsx"
 
 export default class HomePage extends React.Component {
     static getProps() {
@@ -7,12 +9,9 @@ export default class HomePage extends React.Component {
     }
 
     render() {
-        let images = [];
-        for (let i = 1; i <= 10; i++){
-         images.push(<ImageEl name={i}/>);
-        }
         return (<div>
-            {images}
+            <Gallery n="4" m="5" />
+            <Sidebar />
         </div>);
     }
 }
